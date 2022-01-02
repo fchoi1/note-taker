@@ -55,8 +55,8 @@ const renderActiveNote = () => {
   hide(saveNoteBtn);
 
   if (activeNote.id) {
-    noteTitle.setAttribute('readonly', true);
-    noteText.setAttribute('readonly', true);
+    // noteTitle.setAttribute('readonly', true);
+    // noteText.setAttribute('readonly', true);
     noteTitle.value = activeNote.title;
     noteText.value = activeNote.text;
   } else {
@@ -72,6 +72,13 @@ const handleNoteSave = () => {
     title: noteTitle.value,
     text: noteText.value,
   };
+
+  if (activeNote.id) {
+    newNote.id = activeNote.id;
+    activeNote = {};
+  }
+  
+  console.log('active node?', activeNote)
   saveNote(newNote).then(() => {
     getAndRenderNotes();
     renderActiveNote();
