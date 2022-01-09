@@ -3,6 +3,7 @@
 ## Heroku Application 
 
 [Note Taker Application](https://note-taker-fabio.herokuapp.com/notes)
+<img src="./images/website.png" width="500">
 
 ## Description
 This is a simple application utilizing express js to create a server to store, edit and delete notes
