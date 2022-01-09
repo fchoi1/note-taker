@@ -32,7 +32,7 @@ This is a simple application utilizing express js to create a server to store, e
   1. Once the application/server is started, it will be hosted on port 3001 of localhost 
   2. Navigate to https://localhost:3001 to see the webpage 
   3. Click on "get started" to start viewing notes 
-    <img src="./images/step3.png" width="500">
+    <img src="./images/step3a.png" width="500">
   4. To add a note, fill in the note title and note text 
     <img src="./images/step4.png" width="500">
   5. Press the save icon on the upper left corner
