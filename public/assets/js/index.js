@@ -70,15 +70,13 @@ const renderActiveNote = () => {
 const handleNoteSave = () => {
   const newNote = {
     title: noteTitle.value,
-    text: noteText.value,
+    text: noteText.value
   };
 
   if (activeNote.id) {
     newNote.id = activeNote.id;
     activeNote = {};
   }
-  
-  console.log('active node?', activeNote)
   saveNote(newNote).then(() => {
     getAndRenderNotes();
     renderActiveNote();
