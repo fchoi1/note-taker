@@ -1,6 +1,6 @@
 # Note-Taker
 
-## Application 
+## Heroku Application 
 
 [Note Taker Application](https://note-taker-fabio.herokuapp.com/notes)
 
